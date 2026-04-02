@@ -294,10 +294,10 @@ Footer
   max-width: 500px;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 28px 0;
+  margin-bottom: 28px;
 }
 .footer__social--link,
 .footer__copyright {
-  color: white;
+  color: black;
 }
   
