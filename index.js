@@ -4,13 +4,15 @@
 
 function contact(event) {
   event.preventDefault();
-  emailjs
-  .sendForm(
+
+  emailjs.sendForm(
     'service_4zyaozo',
     'template_krcay8n',
     event.target,
-    'user_yBm-gXndMDSxavcz6'
+    '5B9m400C7RuSN3GVi'
   ).then(() => {
     console.log('It worked')
-  })
+  }) .catch((error) => {
+    console.log(error);
+  });
 }
