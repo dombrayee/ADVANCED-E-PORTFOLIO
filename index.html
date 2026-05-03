@@ -115,16 +115,16 @@
             </h3>
             <form id="contact__form" onsubmit="contact(event)">
               <div class="form__item">
-                <label class="form__item--label">Name</label>
-                <input class="input" name="user_name" type="text" ></input>
+                <label for="user_name" class="form__item--label">Name</label>
+                <input id="user_name" class="input" name="user_name" type="text" >
               </div>
               <div class="form__item">
-                <label class="form__item--label">Email</label>
-                <input class="input" name="user_email" type="email" ></input>
+                <label for="user_email" class="form__item--label">Email</label>
+                <input class="input" name="user_email" type="email" >
               </div>
               <div class="form__item">
-                <label class="form__item--label">message</label>
-                <textarea class="input" name="message" type="text" ></textarea>
+                <label for="message" class="form__item--label">message</label>
+                <textarea id="message" class="input" name="message"></textarea>
               </div>
               <button id="contact__submit" class="form__submit">
                 Send it my way
