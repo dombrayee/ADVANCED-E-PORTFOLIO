@@ -4,5 +4,13 @@
 
 function contact(event) {
   event.preventDefault();
-  console.log('It worked');
+  emailjs
+  .sendForm(
+    'service_4zyaozo',
+    'template_krcay8n',
+    event.target,
+    'user_yBm-gXndMDSxavcz6'
+  ).then(() => {
+    console.log('It worked')
+  })
 }
