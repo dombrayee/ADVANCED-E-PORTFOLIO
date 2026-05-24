@@ -1,21 +1,29 @@
-//template_krcay8n
-//service_4zyaozo
-//5B9m400C7RuSN3GVi
+//
+//
+//
 
 function contact(event) {
   event.preventDefault();
-
-  emailjs.sendForm(
+  const loading =  document.querySelector('.modal__overlay--loading')
+  const success =  document.querySelector('.modal__overlay--success')
+  loading.classList += " modal__overlay--visible";
+  emailjs
+  .sendForm(
     'service_4zyaozo',
     'template_krcay8n',
     event.target,
     'yBm-gXndMDSxavcz6'
   ).then(() => {
-    console.log('It worked')
-  }) .catch((error) => {
-    console.log(error);
-  });
-}
-  
+    loading.classList.remove("modal__overlay--visible");
+    success.classList += " modal__overlay--visible";
+    }).catch(() => {
+      loading.classList.remove("modal__overlay--visible");
+      alert(
+        "The email service is temporarily unavailable. Please contact me directly on domcndukwe@gmail.com"
+ );
+    })
+  }
+
+ 
 
     

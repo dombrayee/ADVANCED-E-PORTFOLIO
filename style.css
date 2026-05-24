@@ -391,8 +391,10 @@ transform: scale(1);
    font-weight: 700;
    text-align: center;
     padding: 28px;
+}
 
-
+.modal__overlay--visible {
+  z-index: 1;
 }
 
 .fa-spinner {
