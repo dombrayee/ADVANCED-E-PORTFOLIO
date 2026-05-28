@@ -38,7 +38,7 @@
           link__hover-effect--black"
           >Projects</a>
         </li>
-        <li class="nav__link">
+        <li class="nav__link" onclick="toggleModal()">
           <a href="#" class="
           nav__link--anchor
           link__hover-effect
@@ -63,7 +63,7 @@
           I'm a <b class="orange">Frontend SoftwareEngineer</b> with a 
           <br> strong passion for building web <br> applications with great user experiences
           <br>
-          Here's a bit more <b class="orange">about me</b>.
+          Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
         </p>
         <div class="social__list">
           <a href="https://www.linkedin.com/in/chimezie-ndukwe-05923128/" target="_blank" class="social__link click"><i class="fa-brands fa-linkedin"></i></a>
@@ -72,7 +72,7 @@
         </div>
       </div>
     </header>
-    <button class="mail__btn click">
+    <button class="mail__btn click" onclick="toggleModal()">
       <i class="fa-solid fa-envelope"></i>
     </button>
     <a href="#project" class="scroll">
@@ -107,6 +107,7 @@
             
           </div>
           <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
             <h3 class="modal__title modal__title--contact">
               Let's have a chat!
             </h3>
@@ -135,10 +136,8 @@
             </div>
             <div class="modal__overlay modal__overlay--success">
               Thanks for your message! looking forward to speaking to you soon.
-              
             </div>
           </div>
-          <i class="fas fa-times modal__exit click"></i>
         </div>
       </section>
       <section id="project">
@@ -161,7 +160,6 @@
                     </h4>
                     <p class="project__description--para">
                       lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Doloribus, quisquam. Molestias, voluptate. Doloribus, quisquam. Molestias, voluptate. Doloribus, quisquam. Molestias
-                      
                     </p>
                     <div class="project__description--links">
                       <a href="#" class="project__description--link" >
@@ -177,10 +175,8 @@
             </ul>
           </div>
         </div>
-        
         <div class="container">
           <div class="row">
-            
             <ul class="project__list">
               <li class="project">
                 <div class="project__wrapper">
@@ -195,7 +191,6 @@
                     </h4>
                     <p class="project__description--para">
                       lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Doloribus, quisquam. Molestias, voluptate. Doloribus, quisquam. Molestias, voluptate. Doloribus, quisquam. Molestias
-                      
                     </p>
                     <div class="project__description--links">
                       <a href="#" class="project__description--link" >
@@ -211,10 +206,8 @@
             </ul>
           </div>
         </div>
-        
         <div class="container">
           <div class="row">
-            
             <ul class="project__list">
               <li class="project">
                 <div class="project__wrapper">
@@ -229,7 +222,6 @@
                     </h4>
                     <p class="project__description--para">
                       lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Doloribus, quisquam. Molestias, voluptate. Doloribus, quisquam. Molestias, voluptate. Doloribus, quisquam. Molestias
-                      
                     </p>
                     <div class="project__description--links">
                       <a href="#" class="project__description--link" >
@@ -245,10 +237,8 @@
             </ul>
           </div>
         </div>
-        
         <div class="container">
           <div class="row">
-            
             <ul class="project__list">
               <li class="project">
                 <div class="project__wrapper">
@@ -263,7 +253,6 @@
                     </h4>
                     <p class="project__description--para">
                       lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Doloribus, quisquam. Molestias, voluptate. Doloribus, quisquam. Molestias, voluptate. Doloribus, quisquam. Molestias
-                      
                     </p>
                     <div class="project__description--links">
                       <a href="#" class="project__description--link" >
@@ -283,7 +272,6 @@
       <footer>
         <div class="container">
       <div class="row footer__row">
-        
         <figure>
           <img class="footer__logo--img" src="./assets/logo1.png" alt="">
         </figure>
@@ -305,7 +293,6 @@
           link__hover-effect
           link__hover-effect--white">Resume</a>
         </div>
-        
         <div class="footer__copyright">Copyright © 2026 DOM-C Ndukwe. All rights reserved.</div>
       </div>
     </div>
