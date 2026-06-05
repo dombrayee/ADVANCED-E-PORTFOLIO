@@ -1,6 +1,24 @@
-//
-//
-//
+let isModalOpen = false;
+let contrasToggle = false;
+
+function moveBackground(event) {
+  const shapes = document.querySelectorAll(".shape");
+  const x = event.clientX;
+  const y = event.clientY;
+
+  for (let i = 0; i < shapes.length; ++i) {
+  shapes[i].style.transform = `translate(10%, 10%)`;
+  }
+  const
+function toggleContrast() {
+  contrasToggle = !contrasToggle;
+  if (contrasToggle) {
+    document.body.classList += " dark-theme";
+    } 
+    else {
+      document.body.classList.remove("dark-theme");
+    }
+  }
 
 function contact(event) {
   event.preventDefault();
@@ -24,7 +42,6 @@ function contact(event) {
     })
   }
 
-  let isModalOpen = false;
 
   function toggleModal() {
     if (isModalOpen) {
@@ -34,6 +51,4 @@ function contact(event) {
     isModalOpen = true;
     document.body.classList.toggle("modal--open");
   }
- 
-
-    
+}
