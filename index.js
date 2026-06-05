@@ -1,13 +1,16 @@
-let isModalOpen = false;
+/* let isModalOpen = false; */
 let contrasToggle = false;
 
+const scaleFactor = 1 / 20;
 function moveBackground(event) {
   const shapes = document.querySelectorAll(".shape");
-  const x = event.clientX;
+  const x = event.clientX * scaleFactor;
   const y = event.clientY;
 
   for (let i = 0; i < shapes.length; ++i) {
-  shapes[i].style.transform = `translate(${x}px, ${y}px)`;
+    const isOdd = i % 2 !== 0;
+    const boolInt = isOdd ? -1 : 1;
+  shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`;
   }
 }
 function toggleContrast() {
@@ -42,12 +45,12 @@ function contact(event) {
     })
   }
 
-
+let isModalOpen = false;
   function toggleModal() {
     if (isModalOpen) {
       isModalOpen = false;
       return document.body.classList.remove("modal--open");
-    }
+    } 
     isModalOpen = true;
-    document.body.classList.toggle("modal--open");
+    document.body.classList += " modal--open";
   }
