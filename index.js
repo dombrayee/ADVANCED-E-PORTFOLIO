@@ -7,9 +7,9 @@ function moveBackground(event) {
   const y = event.clientY;
 
   for (let i = 0; i < shapes.length; ++i) {
-  shapes[i].style.transform = `translate(10%, 10%)`;
+  shapes[i].style.transform = `translate(${x}px, ${y}px)`;
   }
-  const
+}
 function toggleContrast() {
   contrasToggle = !contrasToggle;
   if (contrasToggle) {
@@ -51,4 +51,3 @@ function contact(event) {
     isModalOpen = true;
     document.body.classList.toggle("modal--open");
   }
-}
