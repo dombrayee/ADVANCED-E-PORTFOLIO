@@ -159,9 +159,9 @@ input:focus, textarea:focus {
     background-color: #242424;
   }
 
-  .dark-theme #personal-logo {
-    filter: none;
-  }
+ .dark-theme #personal-logo {
+    filter: invert(1);
+  } 
 
 .dark-theme .scroll__icon {
   border-color: white;
@@ -171,6 +171,13 @@ input:focus, textarea:focus {
 .dark-theme .link__hover-effect--black:after {
   background-color: white;
 }
+.dark-theme .link__hover-effect--white:after {
+  background-color: #242424;
+}
+
+.dark-theme .link__hover-effect--white:after {
+  background-color: white;
+} 
 
 .dark-theme .mail__btn { 
   background-color: white;
