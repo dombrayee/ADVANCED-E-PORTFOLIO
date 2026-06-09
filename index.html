@@ -24,7 +24,7 @@
         <img id="personal-logo" src="./assets/logo1.png" alt="">
       </figure>
       <ul class="nav__link--list">
-        <li class="nav__link">
+        <li class="nav__link" onclick="toggleModal()">
           <a href="#" class="
           nav__link--anchor
           link__hover-effect
@@ -32,14 +32,14 @@
           >About</a>
         </li>
         <li class="nav__link">
-          <a href="#" class="
+          <a href="#projects" class="
           nav__link--anchor
           link__hover-effect
           link__hover-effect--black"
           >Projects</a>
         </li>
         <li class="nav__link" onclick="toggleModal()">
-          <a href="#" class="
+          <a href="#projects" class="
           nav__link--anchor
           link__hover-effect
           link__hover-effect--black"
@@ -72,8 +72,10 @@
         </div>
       </div>
     </header>
-    <button class="mail__btn click" onclick="toggleModal()">
-      <i class="fa-solid fa-envelope"></i>
+    <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
     </button>
     <a href="#project" class="scroll">
       <div class="scroll__icon click"></div>
@@ -289,19 +291,31 @@
           <a href="#" class="
           footer__social--link
           link__hover-effect
-          link__hover-effect--white">GitHub</a> 
-          <a href="#" class="
+          link__hover-effect--white">
+
+          GitHub
+        </a> 
+          <a href="#" target="_blank" class="
           footer__social--link
           link__hover-effect
-          link__hover-effect--white">LinkedIn</a> 
-          <a href="#" class="
+          link__hover-effect--white">
+
+          LinkedIn
+        </a> 
+          <a href="#" onclick="toggleModal()" class="
           footer__social--link
           link__hover-effect
-          link__hover-effect--white">Contact</a> 
-          <a href="#" class="
+          link__hover-effect--white">
+          
+          Contact
+        </a> 
+          <a href="./assets/DOMC_NDUKWE_Resume.pdf2.pdf" target="_blank" class="
           footer__social--link
           link__hover-effect
-          link__hover-effect--white">Resume</a>
+          link__hover-effect--white">
+          
+          Resume
+        </a>
         </div>
         <div class="footer__copyright">Copyright © 2026 DOM-C Ndukwe. All rights reserved.</div>
       </div>
